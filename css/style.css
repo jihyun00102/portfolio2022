@@ -615,7 +615,7 @@ header .wrap .menu ul li a:hover::after{width: 100%;}
     50%{background-position: 100% 130%;}
     100%{background-position: 0 130%;}
 }
-#contact{
+#contframe{
     height: calc(100vh - 85px);
     max-width: 800px;
     min-width: 340px;
