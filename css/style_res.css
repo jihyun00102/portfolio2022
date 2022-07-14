@@ -164,6 +164,9 @@
     #port .wrap .left .exp p{
         font-size: 14px;
     }
+    #contact fieldset .formlist ul li .inputbox textarea{
+        height: 280px;
+    }
 
 }
 @media (max-width:767px){
@@ -281,6 +284,9 @@
         margin: 60px 0;
         height: calc(100vh - 205px);
     }
+    #contact .title{
+        margin-bottom: 10px;
+    }
     #port .wrap .left{
         display: none;
     }
@@ -300,8 +306,19 @@
     #port .wrap .right #grid article .photo .txt p{
         opacity: 1;
     }
-
-    
+    #contact fieldset{
+        padding: 20px;
+    }
+    #contact fieldset .formlist ul li{
+        padding: 10px 0;
+    }
+    #contact fieldset .formlist ul li label{
+        line-height: 20px;
+        font-size: 16px;
+    }
+    #contact fieldset .formlist ul li .inputbox textarea{
+        height: 260px;
+    }
 }
 @media (max-width:575px){
     header .menu.active ul{
