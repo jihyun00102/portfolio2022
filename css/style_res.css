@@ -27,6 +27,9 @@
     #port .wrap{
         width: 100%;
     }
+    #contact .title{
+        margin-bottom: 25px;
+    }
 }
 @media (max-width:991px){
     body{
@@ -164,8 +167,11 @@
     #port .wrap .left .exp p{
         font-size: 14px;
     }
-    #contact fieldset .formlist ul li .inputbox textarea{
+    /* #contact fieldset .formlist ul li .inputbox textarea{
         height: 280px;
+    } */
+    #contact .title{
+        margin-bottom: 20px;
     }
 
 }
@@ -316,9 +322,9 @@
         line-height: 20px;
         font-size: 16px;
     }
-    #contact fieldset .formlist ul li .inputbox textarea{
+    /* #contact fieldset .formlist ul li .inputbox textarea{
         height: 260px;
-    }
+    } */
 }
 @media (max-width:575px){
     header .menu.active ul{

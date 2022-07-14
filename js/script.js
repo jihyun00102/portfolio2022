@@ -254,8 +254,7 @@ const pagePortfolio = {
             ],
             siteList : [
                 ["말랑상점","PHP를 활용한 문구사이트 브랜드 제작",["html.png","css.png","js.png"],"malrang.png","http://dlwlgus.dothome.co.kr/malrang/","php",0],
-                ["말랑상점","PHP를 활용한 문구사이트 브랜드 제작",["html.png","css.png","js.png"],"malrang.png","http://dlwlgus.dothome.co.kr/malrang/","php",0],
-                ["PORTFOLIO","vue router를 활용한 포트폴리오 사이트",["html.png","css.png","js.png"],"portfolio.png","http://dlwlgus.dothome.co.kr/malrang/","vue",1],
+                ["MUSIC BOX","JAVASCRIPT를 활용한 음악사이트 제작",["html.png","css.png","js.png"],"musicbox.png","https://jihyun00102.github.io/musicbox/","develop",1],
                 ["PORTFOLIO","vue router를 활용한 포트폴리오 사이트",["html.png","css.png"],"portfolio.png","http://dlwlgus.dothome.co.kr/malrang/","vue",2],
                 ["kuliner","HTML5와 CSS3를 활용한 고정형 사이트",["html.png","css.png"],"kuliner.png","https://jihyun00102.github.io/kuliner/","publish",3],
                 ["cakehouse","HTML5와 CSS3를 활용한 고정형 사이트",["html.png","css.png"],"cakehouse.png","https://jihyun00102.github.io/cakehcious/","publish",4],
@@ -485,7 +484,7 @@ const pagePortfolio = {
                     </ul>
 
                     <div id="grid">
-                        <article class="" v-for="list in siteList"  :data-sort="list[5]" :num="list[6]" @onClick.stop="clickEvt">
+                        <article class="" v-for="list in siteList"  :data-sort="list[5]" :num="list[6]" @mousemove="clickEvt">
                             <div class="photo" :style="'background-image:url(./img/'+list[3]+')'">
                                 <div class="txt">
                                     <h3>{{list[0]}}</h3>
@@ -557,7 +556,7 @@ const pageContact = {
                                 </li>
                             </ul>
                             <div class="btn">
-                                <button type="submit" class="submit">문의하기</button>
+                                <button type="submit" class="command_btn">문의하기</button>
                             </div>
                         </div>
     
@@ -565,8 +564,8 @@ const pageContact = {
                             <article>
                                 <h1>작성된 내용이 모두 전송되었습니다.</h1>
                                 <p>메일 확인 후 연락드리겠습니다.</p>
-                                <div class="ok_btn">
-                                    <router-link to="/contact">닫기</router-link>
+                                <div class="btn_box">
+                                    <router-link to="/contact" class="close">닫기</router-link>
                                 </div>
                             </article>
                         </div>
@@ -630,11 +629,11 @@ new Vue({
 
 
 
-// 메인 별이미지 마우스 이동
-setTimeout(()=>{
+// // 메인 별이미지 마우스 이동
+// setTimeout(()=>{
   
     
-},50);
+// },50);
 
 
 
@@ -703,6 +702,15 @@ $(document).ready(function(){
 
     $(window).resize(function(){
         resizeImg();
+    });
+
+
+
+    $(document).ready(function(){
+        $(".close").click(function(){
+            $(".thankyou_message").hide();
+            return false;
+        });
     });
 
 });

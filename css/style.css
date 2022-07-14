@@ -636,7 +636,7 @@ header .wrap .menu ul li a:hover::after{width: 100%;}
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
 }
 #contact .title img{
     display: block;
@@ -690,7 +690,7 @@ header .wrap .menu ul li a:hover::after{width: 100%;}
     width: 100%;
     border: 1px solid #ccc;
     resize: none;
-    height: 320px;
+    height: 250px;
     border-radius:4px;
     font-size: 14px;
     color:#555;
