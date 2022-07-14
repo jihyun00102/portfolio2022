@@ -35,9 +35,6 @@
     body{
         overflow: hidden;
     }
-    header{
-        /* overflow: hidden; */
-    }
     header .menu{
         position: relative; 
         width: 40px; height: 40px; 
@@ -110,11 +107,14 @@
         width: 70%;
         transform: translate(-50%,-50%), width 0.5s;
     }
+    #main .frame .text1,#main .frame .text2{
+        font-size: 12px;
+    }
     #about .wrap{
         flex-direction: column;
     }
     #about .wrap .left .pic{
-        width: 290px; height: 290px;
+        width: 70%; height: 90%;
     }
     #about .wrap .left img.ov1{
         display: block;
@@ -125,13 +125,32 @@
         margin-bottom: 60px;
         width: 50%;
         padding-right: 0;
+        margin-bottom: 30px;
+    }
+    #about .wrap .right .title{
+        margin-bottom: 10px;
+    }
+    #about .wrap .right .title h3{
+        margin: 0;
+        font-size: 24px;
+    }
+    #about .wrap .right .title h3:hover{
+        font-size: 26px;
     }
     #about .wrap .right .title .subTit{
         align-items: flex-end;
     }
+    #about .wrap .right .title .subTit p span{
+        font-size: 18px;
+    }
+    #about .wrap .right .title .subTit p span:hover{
+        font-size: 20px;
+    }
     #about .wrap .right .ex{
         width: 100%;
         text-align: center;
+        padding: 10px;
+        margin-bottom: 20px;
     }
     #about .wrap .right .ex p{
         font-size: 14px;
@@ -207,7 +226,7 @@
         bottom: 10%; right: 30%;
     }
     #main .frame .text1,#main .frame .text2{
-        font-size: 14px;
+        font-size: 10px;
     }
     #about .wrap .left .pic{
         width: 250px; height: 270px;
@@ -339,9 +358,6 @@
     #main .wrap .star2{
         display: block;
         height: 35px;
-    }
-    #main .frame .text1,#main .frame .text2{
-        font-size: 12px;
     }
     #about .wrap .left img.ov1{
         right: -6%;

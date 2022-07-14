@@ -139,7 +139,7 @@ const pageAbout = {
                 <div class="ex">
                     
                     <p>도전하는 것에 두려움을 느끼지 않고</p>
-                    <p>끝없는 노력으로 결실을 이루어내는 웹 퍼블리셔가 되겠습니다.</p>
+                    <p>끝없는 노력으로 결실을 이루어내겠습니다.</p>
 
                 </div>
                 <div class="hash">
@@ -513,6 +513,11 @@ const pageContact = {
     data : () => {
         return { 
 
+        }
+    },
+    methods : {
+        closeEvt(evt){
+            evt.preventDefault();
         }
     },
     template : `

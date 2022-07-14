@@ -215,11 +215,6 @@ header .wrap .menu ul li a:hover::after{width: 100%;}
     display: flex;
     flex-direction: column;
 }
-#about .wrap .right .title .subTit p{
-    font-size: 20px;
-    color: #555;
-    cursor: pointer;
-}
 #about .wrap .right .title .subTit p span{
     font-size: 24px;
     font-weight: bold;
