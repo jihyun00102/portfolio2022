@@ -255,7 +255,7 @@ const pagePortfolio = {
             siteList : [
                 ["말랑상점","PHP를 활용한 문구사이트 브랜드 제작",["html.png","css.png","js.png"],"malrang.png","http://dlwlgus.dothome.co.kr/malrang/","php",0],
                 ["MUSIC BOX","JAVASCRIPT를 활용한 음악사이트 제작",["html.png","css.png","js.png"],"musicbox.png","https://jihyun00102.github.io/musicbox/","develop",1],
-                ["PORTFOLIO","vue router를 활용한 포트폴리오 사이트",["html.png","css.png"],"portfolio.png","http://dlwlgus.dothome.co.kr/malrang/","vue",2],
+                ["PORTFOLIO","vue router를 활용한 포트폴리오 사이트",["html.png","css.png"],"portfolio.png","https://jihyun00102.github.io/portfolio2022/#/","vue",2],
                 ["kuliner","HTML5와 CSS3를 활용한 고정형 사이트",["html.png","css.png"],"kuliner.png","https://jihyun00102.github.io/kuliner/","publish",3],
                 ["cakehouse","HTML5와 CSS3를 활용한 고정형 사이트",["html.png","css.png"],"cakehouse.png","https://jihyun00102.github.io/cakehcious/","publish",4],
                 ["세종병원","HTML5와 CSS3를 활용한 고정형 사이트",["html.png","css.png"],"sejong.png","https://jihyun00102.github.io/sejong-hospital/","publish",5],
