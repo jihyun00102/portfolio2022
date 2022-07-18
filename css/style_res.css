@@ -114,7 +114,7 @@
         flex-direction: column;
     }
     #about .wrap .left .pic{
-        width: 70%; height: 90%;
+        width: 60%; height: 60%;
     }
     #about .wrap .left img.ov1{
         display: block;
@@ -237,7 +237,7 @@
         font-size: 10px;
     }
     #about .wrap .left .pic{
-        width: 70%; height: 75%;
+        width: 70%; height: 70%;
     }
     #about .wrap .left img.ov1{
         display: block;
@@ -374,16 +374,14 @@
         height: 35px;
     }
     #about .wrap .left .pic{
-        width: 100%;
-        height: 70%;
+        width: 90%;
+        height: 90%;
     }
-    #about .wrap .left img.ov1{
-        height: 65px;
-        right: -6%;
+    #about .wrap .left img.img1,#about .wrap .left img.img2{
+        display: none;
     }
-    #about .wrap .left img.ov2{
-        top: 10%; left: 3%;
-        height: 30px;
+    .c_space,.c_space2{
+        display: none;
     }
     #skills .frame .box{
         margin: 10px;

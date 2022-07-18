@@ -154,28 +154,31 @@ header .wrap .menu ul li a:hover::after{width: 100%;}
     position: relative;
 }
 #about .wrap .left .pic{
-    width: 80%; height: 60%;
-    background-color: #ffa;
-    /* background-image: url(../img/ajax_page1.png); */
+    width: 60%; height: 60%;
+    /* background-color: #ffa; */
+    background-repeat: no-repeat;
+    background-image: url(../img/profile.png);
     box-shadow: 0 0 15px rgba(8, 36, 136, 0.2);
     z-index: 2;
-    border-radius: 50%;
     background-size: cover;
-    background-position: 50% 50%;
+    background-position: 50% 0%;
     position: absolute;
 }
+
 #about .wrap .left img{
     position: absolute;
+    display: block;
 }
-#about .wrap .left img.ov1{
-    top: 56%; right: 4%;
-    animation: img1 2s linear 0s infinite alternate;
-    z-index: 3;
+#about .wrap .left img.img1{
+    height: 30%;
+    top: 10%; left: 0%;
 }
-@keyframes img1 {
-	0% {margin-top: 0px;}
-	100% {margin-top: 20px;}
+#about .wrap .left img.img2{
+    transform: rotate(75deg);
+    right: 1%; top: 43%;
+    height: 35%;
 }
+
 #about .wrap .left img.ov2{
     top: 19%; left: 14%;
     z-index: 1;

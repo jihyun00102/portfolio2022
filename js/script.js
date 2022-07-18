@@ -120,13 +120,16 @@ const pageAbout = {
             ]
     }
     },
+    mounted(){
+    },
     template : `
     <div id="about">
         <div class="wrap">
             <div class="left">
                 <div class="pic"></div>
-                <img src="./img/oval.png" alt="원 애니메이션1" class="ov1">
-                <img src="./img/oval4.png" alt="원 애니메이션2" class="ov2">
+                <img src="./img/spark.png" alt="" class="img1">
+                <img src="./img/spark2.png" alt="" class="img2">
+                
             </div>
             <div class="right">
                 <div class="title">
