@@ -158,11 +158,11 @@ const pageSkill = {
     data : () => {
         return { 
             skillList : [
-               {relNum:0, count:"90",img:"html",text:"HTML5"},
-               {relNum:1, count:"90",img:"css",text:"CSS3"},
-               {relNum:2, count:"80",img:"js",text:"Javascript"},
+               {relNum:0, count:"85",img:"html",text:"HTML5"},
+               {relNum:1, count:"80",img:"css",text:"CSS3"},
+               {relNum:2, count:"75",img:"js",text:"Javascript"},
                {relNum:3, count:"70",img:"php",text:"PHP"},
-               {relNum:4, count:"85",img:"photoshop",text:"PS/AI"},
+               {relNum:4, count:"80",img:"photoshop",text:"PS/AI"},
             ],
             explainList : [
                 {title:"HTML5", text:"HTML구조를 파악하고 적절히 활용하여 마크업 할 수 있습니다."},
@@ -509,16 +509,31 @@ const pagePortfolio = {
     </div>
     `
 }
+
 const pageContact = {
     data : () => {
         return { 
 
         }
     },
-    methods : {
-        closeEvt(evt){
-            evt.preventDefault();
+    mounted(){
+        (function(){
+        if( window.localStorage )
+        {
+            if( !localStorage.getItem('firstLoad') )
+            {
+            localStorage['firstLoad'] = true;
+            window.location.reload();
+            }
+            else
+            localStorage.removeItem('firstLoad');
         }
+        })();
+
+    },
+
+    methods : {
+       
     },
     template : `
     <div id="contframe">
@@ -537,7 +552,7 @@ const pageContact = {
                     <div class="img"></div>
                 </div>
     
-                <form class="gform form-elements" name="contactUs" method="post" action="https://script.google.com/macros/s/AKfycbySM4UyXj5FbbX7EMOqZI09cBaVL9HeEeI-gFa9D6PYozSPgaXR/exec">
+                <form class="gform form-elements" name="contactUs" method="post" action="https://script.google.com/macros/s/AKfycbySM4UyXj5FbbX7EMOqZI09cBaVL9HeEeI-gFa9D6PYozSPgaXR/exec" >
                     <fieldset>
                         <div class="formlist">
                             <ul>
@@ -561,7 +576,7 @@ const pageContact = {
                                 </li>
                             </ul>
                             <div class="btn">
-                                <button type="submit" class="command_btn">문의하기</button>
+                                <button type="submit" class="command_btn" >문의하기</button>
                             </div>
                         </div>
     
@@ -577,11 +592,12 @@ const pageContact = {
                     </fieldset>
                 </form>
                 
+                
             </div>
         </div>
-        
+
     </div>
-    
+
     `
 }
 

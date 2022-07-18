@@ -742,8 +742,8 @@ header .wrap .menu ul li a:hover::after{width: 100%;}
     color: #777;
     padding-bottom: 30px;
 }
-#contact .thankyou_message article .ok_btn{}
-#contact .thankyou_message article .ok_btn a{
+#contact .thankyou_message article .btn_box{}
+#contact .thankyou_message article .btn_box a{
     display: block;
     margin: 0 auto;
     text-align: center;
@@ -751,7 +751,7 @@ header .wrap .menu ul li a:hover::after{width: 100%;}
     color: #fff;
     border-radius: 4px;
     width: 25%;
-    padding: 2px 0;
+    padding: 5px 0;
 }
 
 
