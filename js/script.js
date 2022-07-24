@@ -52,7 +52,7 @@ const pageMain = {
             for(const i in $star){
                 if($main){
                     console.log(i);
-                    //$main.addEventListener("mousemove",function(evt){
+
                         let cur_x = evt.pageX;
                         let cur_y = evt.pageY;
                     
@@ -82,7 +82,6 @@ const pageMain = {
             
                         }
             
-                    //});
                 }
                 
             } 
@@ -265,8 +264,8 @@ const pagePortfolio = {
                 ["Wedding","HTML5와 CSS3를 활용한 고정형 사이트",["html.png","css.png"],"fixed_page1.png","https://jihyun00102.github.io/Aisle-wedding/","publish",6],
                 ["B&O","HTML5와 CSS3를 활용한 고정형 사이트",["html.png","css.png"],"b&o.png","https://jihyun00102.github.io/B-O/","publish",7],
                 ["cashmere","HTML5와 CSS3를 활용한 반응형 사이트",["html.png","css.png"],"cashmere.png","https://jihyun00102.github.io/cashmereSite/","publish",8],
-                ["origin","HTML5와 CSS3를 활용한 반응형 사이트",["html.png","css.png"],"origin.png","https://jihyun00102.github.io/origin/","publish",9],
-                ["INVESTPLAN","JAVASCRIPT와 jQuery를 활용한 고정형 사이트",["html.png","css.png","js.png"],"INVESTPLAN.png","https://jihyun00102.github.io/INVESTPLAN/","publish",10],
+                ["origin","Grid 레이아웃을 활용한 반응형 사이트",["html.png","css.png"],"origin.png","https://jihyun00102.github.io/origin/","publish",9],
+                ["INVESTPLAN","jQuery load 이벤트를 활용한 고정형 사이트",["html.png","css.png","js.png"],"INVESTPLAN.png","https://jihyun00102.github.io/INVESTPLAN/","publish",10],
                 ["weather App","Ajax와 Json를 활용한 날씨앱 구축",["html.png","css.png","js.png"],"weather_app.png","https://jihyun00102.github.io/weatherApp2022/","develop",11],
                 ["MY CHAT","firebase를 활용한 채팅앱 구축",["html.png","css.png","js.png"],"myChat.png","http://dlwlgus.dothome.co.kr/chattingApp/","develop",12],
                 ["Film Maker","vue component를 이용한 영화사이트 구축",["html.png","css.png","js.png"],"vue_component_page2.png","https://jihyun00102.github.io/Flim_makers/","vue",13],
@@ -303,43 +302,6 @@ const pagePortfolio = {
             //클릭시 모니터에 연동
             $("#grid article").click(function(){
                 let grid;
-                // const timeOut = setTimeout(() => {
-                // }, 500);
-                //클릭한 곳의 이미지를 보여주는 구현
-                // const sortBtns = document.querySelectorAll(".sort_btn li");
-                // console.log(sortBtns);
-
-                // for(v of sortBtns){
-                //     v.addEventListener("click", (e) => {
-                //         e.preventDefault();
-                //         const dataSort = e.currentTarget.querySelector("a").getAttribute("data-sort");
-                //         console.log(dataSort);
-                //         grid.arrange({
-                //             filter : dataSort
-                //         });
-
-                //         //전체 버튼에 클래스명 active 제거
-                //         for(v of sortBtns){
-                //             v.classList.remove("active");
-                //         }
-
-                //         //클릭한 곳의 버튼만 클래스명 active 부여
-                //         e.currentTarget.classList.add("active");
-                //     });    
-                // }
-
-                // function resizeImg(){
-                //     const portLeft = $("#port .left .view").height() + $("#port .left .exp").height() + 50;
-                //     //console.log(portLeft);
-                //     $("#port .right #grid").css("height",portLeft - 28 + "px");
-                // }
-            
-                // resizeImg();
-            
-                // $(window).resize(function(){
-                //     resizeImg();
-                // });
-
 
                 $("#grid article").removeClass("active");
                 $(this).addClass("active");
@@ -373,8 +335,6 @@ const pagePortfolio = {
             $info.textContent=`${this.siteList[$index][1]}`;
             $photo.style.backgroundImage=`${this.siteList[$index][3]}`;
 
-            // const timeOut = setTimeout(() => {
-
             const sortBtns = document.querySelectorAll(".sort_btn li");
             console.log(sortBtns);
             
@@ -382,18 +342,10 @@ const pagePortfolio = {
                 evt.preventDefault();
                 const dataSort = evt.currentTarget.querySelector("a").getAttribute("data-sort");
                 console.log(dataSort);
-        
-                //전체 버튼에 클래스명 active 제거
-                // for(const k of sortBtns){
-                //     k.classList.remove("active");
-                // }
-        
-                // //클릭한 곳의 버튼만 클래스명 active 부여
-                // evt.currentTarget.classList.add("active");  
+
             }
 
             setTimeout(() => {
-                        //const portLeft = $("#port .left .view").height() + $("#port .left .exp").height() + 50;
 
                         const portLeftTop = document.querySelector("#port .left .view").clientHeight;
                         const portLeftBottom = document.querySelector("#port .left .exp").clientHeight;
@@ -401,7 +353,6 @@ const pagePortfolio = {
                         
                         console.log(portLeft);
                         document.querySelector("#port .right #grid").style.height = portLeft - 28 + "px";
-                        // $("#port .right #grid").css("height",portLeft - 28 + "px");
 
             },0);
         },
@@ -421,20 +372,13 @@ const pagePortfolio = {
 
         },
         sortEvt(evt){
-            // let grid = ``
-
-            // evt.preventDefault();
-            // grid = new Isotope("#grid", {
-            //     itemSelector : "article",
-            //     transitionDuration : "0.5s"
-            // });
 
             const sortBtns = document.querySelectorAll(".sort_btn li");
             console.log(sortBtns);
             const $article = document.querySelectorAll("article");
             
             for(v of sortBtns){
-                //v.addEventListener("click", (e) => {
+
                     evt.preventDefault();
                     const dataSort = evt.currentTarget.querySelector("a").getAttribute("data-sort");
                     console.log(dataSort);
@@ -445,9 +389,6 @@ const pagePortfolio = {
                     for(const w of resultSort){
                         w.style.display = "block";
                     }
-                    // grid.arrange({
-                    //     filter : dataSort
-                    // });
             
                     //전체 버튼에 클래스명 active 제거
                     for(v of sortBtns){
@@ -455,8 +396,7 @@ const pagePortfolio = {
                     }
             
                     //클릭한 곳의 버튼만 클래스명 active 부여
-                    evt.currentTarget.classList.add("active");
-                // });    
+                    evt.currentTarget.classList.add("active");   
             }
         }
         
@@ -652,23 +592,6 @@ new Vue({
 });
 
 
-
-// // 메인 별이미지 마우스 이동
-// setTimeout(()=>{
-  
-    
-// },50);
-
-
-
-// portfolio 높이값 동일하게
-// const $left_h = document.querySelector(".left").clientHeight;
-// console.log($left_h);
-// const $right= document.querySelector(".right");
-// $right.style.height=`${$left_h}px`;
-
-
-// portfolio 버튼 제어
 
 
 
