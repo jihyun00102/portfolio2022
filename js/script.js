@@ -162,8 +162,8 @@ const pageSkill = {
             skillList : [
                {relNum:0, count:"85",img:"html",text:"HTML5"},
                {relNum:1, count:"80",img:"css",text:"CSS3"},
-               {relNum:2, count:"75",img:"js",text:"Javascript"},
-               {relNum:3, count:"70",img:"php",text:"PHP"},
+               {relNum:2, count:"70",img:"js",text:"Javascript"},
+               {relNum:3, count:"65",img:"php",text:"PHP"},
                {relNum:4, count:"80",img:"photoshop",text:"PS/AI"},
             ],
             explainList : [
